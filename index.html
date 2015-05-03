@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<header class="home container">
+  <h1>Low Key Pro is the best new way to <br>
+  RSVP for events in your area.</h1>
+</header>
+<main class="home">
+  <div class="container">
+    <section class="upcoming-events">
+      <h2>Upcoming Events</h2>
+      <!-- Google Maps Embed -->
+    </section>
+    <section class="previous-events">
+      <h2>Previous Events</h2>
+      <table>
+      <!-- 5 latest posts -->
+      {% for post in site.posts limit:5 %}
+        <tr>
+          <td>{{ post.title }}</td>
+          <td>{{ post.date | date: "%-m/%d/%Y" }}</td>
+        </tr>
+      {% endfor %}
+      </table>
+    </section>
+  </div>
+</main>

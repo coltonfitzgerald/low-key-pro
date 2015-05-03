@@ -1,0 +1,13 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  @include font-smoothing;
+  background: url('../img/background.jpg') center no-repeat;
+  background-size: cover;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
