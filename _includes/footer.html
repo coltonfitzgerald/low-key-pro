@@ -3,7 +3,7 @@
     <ul>
       {% for p in site.pages | sort:weight %}
         <li>
-          <a href="{{ p.url }}">
+          <a href="{{ site.baseurl }}{{ p.url }}">
             {{ p.title }}
           </a>
         </li>
