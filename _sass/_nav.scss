@@ -32,7 +32,13 @@ nav {
     }
   }
   ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     -webkit-flex-flow: row wrap;
 
@@ -56,6 +62,7 @@ nav {
     //justify-content: space-around;
   }
   .show-nav {
+    -webkit-transition: 1s ease all;
     transition: 1s ease all;
     nav {
       margin-bottom: 270px;
@@ -74,6 +81,7 @@ nav {
 @media all and (max-width: 600px) {
   nav ul {
     -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
     padding: 0;
   }

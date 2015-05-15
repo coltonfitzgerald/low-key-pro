@@ -8,8 +8,14 @@
   padding: 1em;
   margin-top: 2em;
   ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0;
     li {
       list-style: none;
