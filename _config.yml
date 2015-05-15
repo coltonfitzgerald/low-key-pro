@@ -11,3 +11,6 @@ url: "http://coltonfitzgerald.github.io/low-key-pro/" # the base hostname & prot
 # Build settings
 markdown: kramdown
 permalink: /event/:year/:month/:day/:title/
+
+sass:
+    style: :compressed
