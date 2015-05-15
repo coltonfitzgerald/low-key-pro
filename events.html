@@ -15,7 +15,7 @@ permalink: /events/
             <span class="month">{{ post.date | date: "%b" }}</span>
           </time>
           <li>
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | truncate:35}}</a>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | truncate:35}}</a>
           </li>
         </div>
       {% endfor %}
