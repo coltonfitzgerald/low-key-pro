@@ -1,0 +1,19 @@
+/* TEAM */
+
+Web Developer & Designer: Colton Fitzgerald
+Site: coltonfitzgerald.me
+Email: colton [at] coltonfitzgerald.me
+Twitter: @colton_fitz
+Location: Las Vegas, NV
+
+Site Master: Chris Binuya
+Site: lowkeypro.com
+Email: halfaladdin@gmail.com
+Location: Las Vegas, NV
+
+
+/* SITE */
+
+Standards: HTML5, CSS3
+Components: Normalize
+Software: Sublime Text, Git, Chrome Dev Tools, Sketch, Jekyll

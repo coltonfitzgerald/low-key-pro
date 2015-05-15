@@ -5,6 +5,7 @@
   line-height: 41px;
   text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 nav {
@@ -15,6 +16,20 @@ nav {
   .logo {
     float: left;
     line-height: 80px;
+    @media (max-width: 800px) {
+      float: none;
+      text-align: center;
+    }
+  }
+  #menu-toggle {
+    fill: white;
+    display: none;
+    @media (max-width: 800px) {
+      display: block;
+      float: right;
+      margin-top: 1.5em;
+      margin-right: 1.5em;
+    }
   }
   ul {
     display: flex;
@@ -27,15 +42,32 @@ nav {
       display: block;
       padding: 0 1em;
       line-height: 80px;
+      color: white;
     }
     li {
       list-style-type: none;
     }
   }
 }
+
 @media all and (max-width: 800px) {
   nav ul {
-    justify-content: space-around;
+    display: none;
+    //justify-content: space-around;
+  }
+  .show-nav {
+    transition: 1s ease all;
+    nav {
+      margin-bottom: 270px;
+      ul {
+        display:block;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+      }
+      li {
+        display: block;
+      }
+    }
   }
 }
 

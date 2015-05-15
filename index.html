@@ -10,19 +10,25 @@ layout: default
   <div class="container">
     <section class="upcoming-events">
       <h2>Upcoming Events</h2>
-      <!-- Google Maps Embed -->
+      <div class="responsive-container">
+        <iframe src="https://www.google.com/calendar/embed?title=Low%20Key%20Pro&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;ctz=America%2FLos_Angeles" width="400" height="200" scrolling="no"></iframe>
+      </div>
     </section>
     <section class="previous-events">
       <h2>Previous Events</h2>
-      <table>
-      <!-- 5 latest posts -->
+      <ul class="previous-events-list">
       {% for post in site.posts limit:5 %}
-        <tr>
-          <td>{{ post.title }}</td>
-          <td>{{ post.date | date: "%-m/%d/%Y" }}</td>
-        </tr>
+        <div class="event">
+          <time class="date" datetime="{{ post.date }}">
+            <span class="day">{{ post.date | date: "%d" }}</span>
+            <span class="month">{{ post.date | date: "%b" }}</span>
+          </time>
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        </div>
       {% endfor %}
-      </table>
+      </ul>
     </section>
   </div>
 </main>
