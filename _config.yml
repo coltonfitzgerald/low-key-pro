@@ -10,4 +10,4 @@ url: "http://coltonfitzgerald.github.io/low-key-pro" # the base hostname & proto
 
 # Build settings
 markdown: kramdown
-permalink: /event/:year/:month/:day/:title/
+permalink: low-key-pro/event/:year/:month/:day/:title/
